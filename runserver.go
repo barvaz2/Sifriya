@@ -5,7 +5,7 @@ import (
   "google.golang.org/appengine"
 )
 
-func getAllCategoriesList() {
+func getAllCategoriesList() string {
   return ""
 }
 
