@@ -10,7 +10,7 @@ function httpGetAsync(theUrl, callback)
 }
 
 function createContent() {
-    httpGetAsync('http://127.0.0.1:3000/categories/list', function(text) {
+    httpGetAsync('categories/list', function(text) {
         console.info(text);
     });
 }
