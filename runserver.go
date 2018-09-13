@@ -3,7 +3,7 @@ import (
   "net/http"
   //"io/ioutil"
   "strings"
-  //"google.golang.org/appengine"
+  "google.golang.org/appengine"
 )
 
 func getAllCategoriesList() string {
@@ -37,5 +37,5 @@ func main() {
     panic(err)
   }
 
-  //appengine.Main()
+  appengine.Main()
 }
