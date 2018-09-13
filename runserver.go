@@ -24,7 +24,7 @@ func main() {
   fs := http.FileServer(http.Dir("public"))
   http.Handle("/", fs)
   http.HandleFunc("/categories/", getGategories)
-  if err := http.ListenAndServe(":80", nil); err != nil {
+  if err := http.ListenAndServeTLS(":3000", "ssl_cert/myKey.crt", "ssl_cert/myKey.key" nil); err != nil {
     panic(err)
   }
 
