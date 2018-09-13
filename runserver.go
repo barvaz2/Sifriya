@@ -6,7 +6,7 @@ import (
 )
 
 func getAllCategoriesList() {
-
+  return ""
 }
 
 func getGategories(w http.ResponseWriter, r *http.Request) {
