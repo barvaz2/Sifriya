@@ -2,10 +2,11 @@ package main
 import (
   "net/http"
   "strings"
+  "google.golang.org/appengine"
 )
 
 func getAllCategoriesList() {
-  
+
 }
 
 func getGategories(w http.ResponseWriter, r *http.Request) {
@@ -26,4 +27,6 @@ func main() {
   if err := http.ListenAndServe(":3000", nil); err != nil {
     panic(err)
   }
+
+  appengine.Main()
 }
