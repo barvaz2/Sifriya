@@ -139,7 +139,8 @@ hr {
 	margin-top: 20px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	
+	color: #fff;
+	background-color: #242d2a;
 	border-color: #EEEEEE;
 }
 /* Header Section */
