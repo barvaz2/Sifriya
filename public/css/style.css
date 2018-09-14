@@ -279,45 +279,20 @@ ol.type li a:hover {
 	position: relative;
 }
 .hover-bg .hover-text {
-	position: absolute;
-	text-align: center;
-	margin: 0 auto;
-	color: #ffffff;
-	background: rgba(0, 0, 0, 0.66);
-	padding: 30% 0 0 0;
-	height: 100%;
-	width: 100%;
-	opacity: 0;
-	transition: all 0.5s;
+	position: absolute;   
+	text-align: center;	
+	color: #ffffff;		
+	background-color:#000000;
+	opacity: 0.6; 
+	filter: alpha(opacity=60);
+	direction: rtl;		
+	right: 0px;
+	padding: 10px;
+	border-radius: 10px 0px 10px 10px;
 }
-.hover-bg .hover-text>h4 {
-	text-transform: uppercase;
-	opacity: 0;
+.hover-bg .hover-text>h4 {	
 	color: #fff;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>h4 {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-}
-.hover-bg .hover-text>i {
-	opacity: 0;
-	-webkit-transform: translateY(0);
-	transform: translateY(0);
-	transition: all 0.3s;
-}
-.hover-bg:hover .hover-text>i {
-	opacity: 1;
-	-webkit-backface-visibility: hidden;
-	-webkit-transform: translateY(100%);
-	transform: translateY(100%);
-}
-.hover-bg:hover .hover-text {
-	opacity: 1;
+	font-size: x-large;
 }
 #portfolio i.fa {
 	font-size: 20px;
