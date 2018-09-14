@@ -8,15 +8,22 @@ import (
 	"google.golang.org/appengine" // for deploy
 )
 
-func getAllCategoriesList() string {
-	return "test123"
+func getAllCategoriesList(cat string) string {
+	println("Category: " + cat)
+	switch cat {
+	case "sciencefiction":
+		return "Asimov you want, huh?"
+		break
+	}
+
+	return "WTF is wrong with you"
 }
 
 func handleFunc(w http.ResponseWriter, r *http.Request) {
 	reqpath := strings.TrimPrefix(r.URL.Path, "/")
 	sa := strings.Split(reqpath, "/")
-	if len(sa) > 1 && sa[0] == "categories" && sa[1] == "list" {
-		message := getAllCategoriesList()
+	if len(sa) > 2 && sa[0] == "categories" && sa[1] == "list" {
+		message := getAllCategoriesList(sa[2])
 		w.Write([]byte(message))
 	} else {
 		if r.URL.Path != "/" {
